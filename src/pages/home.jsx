@@ -3,7 +3,7 @@ import heroBg from '../img/vinvar.jpeg';
 const HomePage = () => {
   return (
     <section
-      className="relative h-[3000px] bg-cover bg-center flex items-center justify-center"
+      className="relative bg-cover min-h-[100vh] bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       {/* Overlay to darken the background image */}
