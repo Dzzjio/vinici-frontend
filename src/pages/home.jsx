@@ -1,36 +1,38 @@
-import React from 'react';
-import heroBg from '../img/vinvar.jpeg'
+import heroBg from '../img/vinvar.jpeg';
 
 const HomePage = () => {
   return (
-    <div
-      className="flex justify-center items-center min-h-screen bg-cover bg-center"
+    <section
+      className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
-      <header className="flex flex-col md:flex-row justify-between items-center w-full max-w-6xl bg-black bg-opacity-50 rounded-2xl p-10 shadow-lg">
-        {/* Left Column - Heading and Button */}
-        <div className="flex-1 mb-8 md:mb-0 md:mr-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+      {/* Overlay to darken the background image */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
+      {/* Content Wrapper */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-white space-y-8 md:space-y-0 md:space-x-10">
+        
+        {/* Left Section with Heading and Button */}
+        <div className="flex flex-col items-start max-w-lg space-y-6">
+          <h2 className="text-4xl md:text-5xl font-bold">
             Bringing higher voter turnout in elections
-          </h1>
-          <button
-            className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-gray-200 transition"
-            onClick={() => alert('Get Started Clicked!')}
-          >
-            გაიგე მეტი {/* Button in Georgian */}
+          </h2>
+          <button className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold text-lg hover:bg-gray-200 transition">
+            გაიგე მეტი
           </button>
         </div>
-
-        {/* Right Column - Supporting Text */}
-        <div className="flex-1 text-left">
-          <p className="text-lg md:text-xl leading-relaxed text-white">
-            By empowering citizens to make informed voting decisions, VINICI is AI-powered, fact-based profiles of politicians and parties.
-            We provide easily digestible profiles showcasing backgrounds, finances, stances on key issues, and more. Consider us a one-stop
-            directory for political candidate transparency.
+        
+        {/* Right Section with Subheading and Text */}
+        <div className="flex flex-col items-start max-w-lg space-y-4">
+          <h4 className="text-2xl font-semibold">
+            By empowering citizens to make informed voting decisions
+          </h4>
+          <p className="text-lg">
+            VINICI is AI-powered, fact-based profiles of politicians and parties. We provide easily digestible profiles showcasing backgrounds, finances, stances on key issues, and more. Consider us a one-stop directory for political candidate transparency. VINICI (ᲕᲘᲜᲘᲪᲘ) means "Who do you know" in Georgian.
           </p>
         </div>
-      </header>
-    </div>
+      </div>
+    </section>
   );
 };
 
