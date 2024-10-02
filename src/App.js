@@ -1,42 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import heroBg from '../src/img/vinvar.jpeg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header" style={{ backgroundColor: '#282c34', padding: '50px', color: 'white', minHeight: '100vh' }}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '20px' }}>Welcome to My Test Page</h1>
-        <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>
-          This is a simple test to check if the integration between React and Softr works.
+    <div className="App" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <header className="App-header" style={{ color: 'white', textAlign: 'center', padding: '50px', backgroundColor: 'rgba(0, 0, 0, 0.5)', borderRadius: '15px', maxWidth: '80%', boxShadow: '0px 0px 20px rgba(0, 0, 0, 0.5)' }}>
+        
+        <h1 style={{ fontSize: '3rem', marginBottom: '20px', fontWeight: 'bold' }}>Bringing higher voter turnout in elections</h1>
+
+        <p style={{ fontSize: '1.5rem', margin: '20px 0', lineHeight: '1.5' }}>
+          By empowering citizens to make informed voting decisions, VINICI is AI-powered, fact-based profiles of politicians and parties.
+          We provide easily digestible profiles showcasing backgrounds, finances, stances on key issues, and more.
         </p>
-        <img src={logo} className="App-logo" alt="logo" style={{ height: '150px', margin: '20px 0' }} />
         
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '30px 0' }}>
-          <button 
-            style={{ padding: '10px 20px', backgroundColor: '#61dafb', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '1rem' }} 
-            onClick={() => alert('Button 1 clicked!')}
-          >
-            Click Me
-          </button>
-          
-          <button 
-            style={{ padding: '10px 20px', backgroundColor: '#ff6347', border: 'none', borderRadius: '5px', cursor: 'pointer', fontSize: '1rem' }} 
-            onClick={() => alert('Button 2 clicked!')}
-          >
-            Another Button
-          </button>
-        </div>
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#61dafb', fontSize: '1.5rem' }}
+        <button 
+          style={{
+            padding: '15px 30px', 
+            backgroundColor: '#ff6347', 
+            border: 'none', 
+            borderRadius: '10px', 
+            color: 'white', 
+            fontSize: '1.2rem', 
+            cursor: 'pointer',
+            marginTop: '20px'
+          }}
+          onClick={() => alert('Get Started Clicked!')}
         >
-          Learn React
-        </a>
+          Get Started
+        </button>
       </header>
     </div>
   );
