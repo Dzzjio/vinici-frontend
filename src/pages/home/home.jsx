@@ -1,5 +1,9 @@
 import heroBg from '../../img/vinvar.jpeg';
 import ChoosePoliticians from './choosePoliticians';
+import Methodologies from './methodologies';
+import MethodologiesFullView from './methodologiesFullView';
+import Services from './services';
+import Team from './team';
 import WhoAreWe from './whoAreWe';
 
 const HomePage = () => {
@@ -50,6 +54,18 @@ const HomePage = () => {
     </section>
     <section>
       <WhoAreWe />
+    </section>
+    <section>
+      <Team />
+    </section>
+    <section>
+      <Services />
+    </section>
+    <section>
+      <Methodologies />
+    </section>
+    <section>
+      <MethodologiesFullView />
     </section>
     </>
   );
