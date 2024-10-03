@@ -1,14 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Root from './root'; // Import Root component
+import Root from './root';
 import Home from '../pages/home';
 import Election from '../pages/election';
-import Error from '../pages/error'; // Optional: Import error page
+import Error from '../pages/error';
 
 const Router = createBrowserRouter([
     {
-        path: '/',  // Root layout route
-        element: <Root />,  // Wraps children with the Root component
-        errorElement: <Error />,  // Optional: Handle errors like 404 or other
+        path: '/',
+        element: <Root />,
+        errorElement: <Error />,
         children: [
             {
                 path: '/',

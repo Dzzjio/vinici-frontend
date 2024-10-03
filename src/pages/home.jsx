@@ -1,8 +1,10 @@
+import GrayCard from '../components/grayCard';
 import heroBg from '../img/vinvar.jpeg';
 
 const HomePage = () => {
   return (
-    <section
+    <>
+         <section
       className="relative bg-cover min-h-[100vh] bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
@@ -33,6 +35,13 @@ const HomePage = () => {
         </div>
       </div>
     </section>
+    <div>
+    <GrayCard />
+    <GrayCard />
+    <GrayCard />
+    <GrayCard />
+    </div>
+    </>
   );
 };
 
