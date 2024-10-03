@@ -1,6 +1,6 @@
-// import GrayCard from '../../../components/grayCard';
 import heroBg from '../../img/vinvar.jpeg';
 import ChoosePoliticians from './choosePoliticians';
+import WhoAreWe from './whoAreWe';
 
 const HomePage = () => {
   return (
@@ -47,6 +47,9 @@ const HomePage = () => {
         <span>*</span>
       </div>
       <ChoosePoliticians />
+    </section>
+    <section>
+      <WhoAreWe />
     </section>
     </>
   );
