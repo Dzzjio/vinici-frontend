@@ -1,10 +1,11 @@
-import GrayCard from '../components/grayCard';
-import heroBg from '../img/vinvar.jpeg';
+// import GrayCard from '../../../components/grayCard';
+import heroBg from '../../img/vinvar.jpeg';
+import ChoosePoliticians from './choosePoliticians';
 
 const HomePage = () => {
   return (
     <>
-         <section
+    <section
       className="relative bg-cover min-h-[100vh] bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
@@ -35,12 +36,18 @@ const HomePage = () => {
         </div>
       </div>
     </section>
-    <div>
-    <GrayCard />
-    <GrayCard />
-    <GrayCard />
-    <GrayCard />
-    </div>
+    <section>
+      <div>
+        <h3>
+          გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
+        </h3>
+        <p>
+          აქ იქნება ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე.
+        </p>
+        <span>*</span>
+      </div>
+      <ChoosePoliticians />
+    </section>
     </>
   );
 };
