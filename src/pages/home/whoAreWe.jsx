@@ -132,10 +132,10 @@ const WhoAreWe = () => {
               </p>
               <div className="flex space-x-4">
                 <button onClick={() => scrollTimeline('left')} className="border border-gray-300 text-gray-900 px-4 py-2 rounded-lg flex items-center">
-                  <FaArrowLeft className="mr-2" /> 
+                  <FaArrowLeft className="mr-2 text-white" /> 
                 </button>
                 <button onClick={() => scrollTimeline('right')} className="border border-gray-300 text-gray-900 px-4 py-2 rounded-lg flex items-center">
-                  <FaArrowRight className="mr-2" />
+                  <FaArrowRight className="mr-2 text-white" />
                 </button>
               </div>
             </div>
