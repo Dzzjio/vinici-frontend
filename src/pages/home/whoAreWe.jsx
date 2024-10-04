@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import viniciCover from '../../img/vinici-cover.png';
 import march from '../../img/march.png';
+import logo from '../../img/logo.png';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const WhoAreWe = () => {
@@ -90,7 +91,7 @@ const WhoAreWe = () => {
           <div className="w-[90%] h-[calc(100%-80px)] mt-[80px] bg-white rounded-t-2xl shadow-lg flex">
             {/* Left (Gray) Column */}
             <div className="w-1/2 bg-gray-300 flex justify-center items-center rounded-tl-2xl">
-              <h1 className="text-4xl font-bold">Logo</h1>
+              <img src={logo} alt="logo" />
             </div>
             {/* Right (White) Column */}
             <div className="w-1/2 bg-white flex justify-center items-center rounded-tr-2xl p-20">
