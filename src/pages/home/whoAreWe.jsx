@@ -1,8 +1,72 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import viniciCover from '../../img/vinici-cover.png';
 import march from '../../img/march.png';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const WhoAreWe = () => {
+  const timelineRef = useRef(null);
+
+  const scrollTimeline = (direction) => {
+    if (timelineRef.current) {
+      const scrollAmount = direction === 'left' ? -300 : 300;
+      timelineRef.current.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  const timelineData = [
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+    {
+      date: 'March, 2023',
+      description: 'Co-Founder Ana witnesses the March 2023 protests in Georgia...'
+    },
+    {
+      date: 'November, 2024',
+      description: 'VINICI wins Democracy Tech Hackathon 2024...'
+    },
+  ];
+
   return (
     <section className="py-16 bg-[#F9FAFB] relative">
       <div className="relative" style={{ height: '450vh' }}>
@@ -53,6 +117,39 @@ const WhoAreWe = () => {
           </div>
         </div>
 
+        <div className="sticky top-0 w-full h-[100vh] bg-brandColorSecondary z-30 flex justify-center items-center">
+          <div className="w-[90%] h-[calc(100%-80px)] mt-[80px] rounded-t-2xl shadow-lg p-10">
+            <h5 className="text-brandColorPrimary text-lg font-semibold mb-4">
+              Additional Information
+            </h5>
+            <h2 className="text-4xl font-bold text-white mb-6">
+              ორგანიზაციის ისტორია
+            </h2>
+            <div className="mb-8 flex justify-between items-start">
+              <p className="text-lg text-white">
+                მონაცემთა  შეგროვებისა და დამუშავების პროცესი კომპლექსური და რამდენიმე ეტაპიანია, რომელიც საჯარო ინფორმაციის წყაროებს ეყრდნობა.
+              </p>
+              <div className="flex space-x-4">
+                <button onClick={() => scrollTimeline('left')} className="border border-gray-300 text-gray-900 px-4 py-2 rounded-lg flex items-center">
+                  <FaArrowLeft className="mr-2" /> 
+                </button>
+                <button onClick={() => scrollTimeline('right')} className="border border-gray-300 text-gray-900 px-4 py-2 rounded-lg flex items-center">
+                  <FaArrowRight className="mr-2" />
+                </button>
+              </div>
+            </div>
+
+            <div ref={timelineRef} className="flex space-x-6 overflow-x-auto">
+              {timelineData.map((item, index) => (
+                <div key={index} className="w-[300px] bg-gray-100 p-6 rounded-lg shadow-md flex-shrink-0">
+                  <h3 className="text-brandColorPrimary font-bold text-lg mb-2">{item.date}</h3>
+                  <p className="text-gray-600">{item.description}</p>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
       </div>
     </section>
   );
