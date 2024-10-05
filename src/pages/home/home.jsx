@@ -40,15 +40,17 @@ const HomePage = () => {
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h3>
-          გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
-        </h3>
-        <p>
-          აქ იქნება ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე.
-        </p>
-        <span>*</span>
+    <section className='container mx-auto'>
+      <div className="flex justify-between items-center py-6">
+        <div>
+          <h3 className="text-5xl font-bold text-gray-900">
+            გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
+          </h3>
+          <p className="text-gray-500 text-xl mt-4">
+            აქ იქნება ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე.
+          </p>
+        </div>
+        <span className="text-brandColorPrimary text-6xl font-bold">*</span> {/* Add your custom color */}
       </div>
       <ChoosePoliticians />
     </section>
