@@ -69,6 +69,7 @@ const HomePage = () => {
     <section>
       <MethodologiesFullView />
     </section>
+    <h1>this was all for nothing </h1>
     </>
   );
 };
