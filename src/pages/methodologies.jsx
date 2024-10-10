@@ -70,7 +70,7 @@ const Methodologies = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {methodologies.map((item, index) => (
             <div key={index} className="flex flex-col gap-4 items-center">
-              <img src={item.icon} alt={item.alt} className="w-20 h-20 lg:w-32 lg:h-32"/>
+              <img src={item.icon} alt={item.alt} className="w-20 h-20 "/>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-sm lg:text-base">{item.description}</p>
             </div>
@@ -79,7 +79,7 @@ const Methodologies = () => {
       </div>
 
       {/* Analysis Section */}
-      <div className="py-8 bg-gray-100 mt-12 lg:mt-16">
+      <div className="py-8 bg-grayBackground mt-12 lg:mt-16">
         <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">რას ვაანალიზებთ</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -93,7 +93,7 @@ const Methodologies = () => {
 
           {/* Asterisk Section */}
           <div className="mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 p-6 lg:p-8 bg-white rounded-lg shadow-md">
-            <div className="flex items-start">
+            <div className="flex flex-col items-start">
               <span className="text-4xl lg:text-5xl text-brandColorPrimary font-bold mr-4">*</span>
               <p className="text-sm lg:text-lg">
                 ჩვენ პრიორიტეტს ვანიჭებთ სიზუსტეს, გამჭვირვალობას და მიუკერძოებლობას ჩვენი პლატფორმის ყველა ასპექტში.
@@ -111,7 +111,7 @@ const Methodologies = () => {
 
       {/* Contact Us Section */}
       <div className="py-12 mt-12 lg:mt-16">
-        <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto bg-gray-100 rounded-lg p-6 lg:p-8 flex flex-col items-center text-center shadow-md">
+        <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto bg-grayBackground rounded-lg p-6 lg:p-8 flex flex-col items-center text-center shadow-md">
           {/* Image container with three images */}
           <div className="flex space-x-4 mb-4">
             <img src={kobaxidze} alt="Kobaxidze" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white" />
