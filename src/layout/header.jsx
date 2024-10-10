@@ -3,14 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        {/* Logo with Home Link */}
-        <Link to="/" className="text-2xl font-bold hover:text-gray-400">
-          <span className="logo">MySite</span> {/* Replace MySite with your logo text */}
-        </Link>
-
-        {/* Navigation Links */}
+    <header className="bg-gray-800 text-white p-4 flex justify-center">
         <nav>
           <ul className="flex space-x-4">
             <li>
@@ -23,9 +16,18 @@ const Header = () => {
                 Elections
               </Link>
             </li>
+            <li>
+              <Link to="/methodologies" className="hover:text-gray-400 transition duration-300">
+                methodologies
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-gray-400 transition duration-300">
+                About
+              </Link>
+            </li>
           </ul>
         </nav>
-      </div>
     </header>
   );
 };
