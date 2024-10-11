@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutBg from '../img/about-bg.jpeg';
+import { methodologies, analysisItemsDesc } from './methodologies.jsx'
 
 const About = () => {
   // Array of objects for grid content
@@ -31,12 +32,14 @@ const About = () => {
             </h2>
           </div>
 
-          <p className="text-base lg:text-lg text-gray-700 leading-relaxed mt-6 lg:mt-0">
-            VINICI (ვინ იცი) პოლიტიკოსებისა და პარტიების პროფესიული პლატფორმა,
-            ასევე შერჩული მენტორის მაცადე. ვინ თუ არა იცი, ან თუ იცი, გაიცნო.
-            ხელოვნური ინტელექტის დახმარებით, გამჭვირვალობა, არჩევანი და გადაწყვეტილებები
-            ეფუძნება დახვეწილი მონაცემების და პოლიტიკის თვალსაზრისით დასკვნებს.
-          </p>
+          <div className="flex items-center">
+            <p className="text-base lg:text-lg text-gray-700 leading-relaxed mt-6 lg:mt-0">
+              VINICI (ვინ იცი) პოლიტიკოსებისა და პარტიების პროფესიული პლატფორმა,
+              ასევე შერჩული მენტორის მაცადე. ვინ თუ არა იცი, ან თუ იცი, გაიცნო.
+              ხელოვნური ინტელექტის დახმარებით, გამჭვირვალობა, არჩევანი და გადაწყვეტილებები
+              ეფუძნება დახვეწილი მონაცემების და პოლიტიკის თვალსაზრისით დასკვნებს.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -63,6 +66,36 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Methodologies Section */}
+      <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto text-center py-8 bg-white">
+        <h3 className="text-lg font-semibold text-brandColorPrimary mb-4">დამხმარე ხელსაწყოები</h3>
+        <h2 className="text-3xl lg:text-4xl font-bold mb-8">მეთოდოლოგია</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {methodologies.map((item, index) => (
+            <div key={index} className="flex flex-col gap-4 items-center">
+              <img src={item.icon} alt={item.alt} className="w-20 h-20 "/>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-sm lg:text-base">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="py-8 bg-grayBackground mt-12 lg:mt-16">
+        <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">რას ვაანალიზებთ</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {analysisItemsDesc.map((item, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-4xl lg:text-5xl font-semibold text-brandColorPrimary mb-12">{item.title}</h3>
+                <p className="text-sm lg:text-base">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          </div>
+          </div>
+
     </div>
   );
 };
