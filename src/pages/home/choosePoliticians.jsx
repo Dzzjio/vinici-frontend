@@ -5,19 +5,19 @@ const ChoosePoliticians = () => {
   // Data for each GrayCard
   const cardsData = [
     {
-      title: 'პოლიტიკოსები 1',
+      title: 'პოლიტიკოსები',
       description: 'ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე 1.',
-      buttonText: 'See all 1'
+      buttonText: 'იხილე ყველა'
     },
     {
-      title: 'პოლიტიკოსები 2',
+      title: 'პარტიები და გაერთიანებები',
       description: 'ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე 2.',
-      buttonText: 'See all 2'
+      buttonText: 'იხილე ყველა'
     },
     {
-      title: 'პოლიტიკოსები 3',
+      title: 'შეადარე პოლიტიკოსები ან პარტიები',
       description: 'ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე 3.',
-      buttonText: 'See all 3'
+      buttonText: 'იხილე ყველა'
     }
   ];
 

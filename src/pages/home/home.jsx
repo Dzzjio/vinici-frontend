@@ -42,7 +42,7 @@ const HomePage = () => {
     </section>
     <section className='max-w-container mx-auto'>
     <div className="flex flex-col lg:flex-row justify-between items-center py-6">
-        <h3 className="text-5xl font-bold text-gray-900">
+        <h3 className="text-5xl font-bold text-gray-900 my-12">
           გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
         </h3>
         <div className='flex'>
