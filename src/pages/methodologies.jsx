@@ -109,7 +109,6 @@ const Methodologies = () => {
         </div>
       </div>
 
-      {/* Contact Us Section */}
       <div className="py-12 mt-12 lg:mt-16">
         <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto bg-grayBackground rounded-lg p-6 lg:p-8 flex flex-col items-center text-center shadow-md">
           {/* Image container with three images */}
