@@ -82,7 +82,7 @@ const WhoAreWe = () => {
         </div>
 
         {/* Heading Section */}
-        <div className="sticky top-0 w-full h-[20vh] bg-brandColorPrimary text-white text-[4vw] font-bold flex justify-center items-center z-20">
+        <div className="sticky top-0 w-full h-[20vh] bg-brandColorPrimary text-white text-[6vw] lg:text-[4vw] font-bold flex justify-center items-center z-20">
           ვინ ვართ და რას გთავაზობთ
         </div>
 
@@ -94,8 +94,8 @@ const WhoAreWe = () => {
               <img src={logo} alt="logo" />
             </div>
             {/* Right (White) Column */}
-            <div className="w-1/2 bg-white flex justify-center items-center rounded-tr-2xl p-20">
-              <p className="text-gray-700 text-2xl">
+            <div className="w-1/2 bg-white flex justify-center items-center rounded-tr-2xl p-4">
+              <p className="text-gray-700 text-[3vw] lg:text-[2vw]">
                 VINICI (ᲕᲘᲜ ᲘᲪᲘ) პოლიტიკოსებისა და პარტიების პროფილების პლატფორმაა, რომელიც ხელოვნური ინტელექტის დახმარებით იქმნება...
               </p>
             </div>

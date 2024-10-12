@@ -17,10 +17,10 @@ const HomePage = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content Wrapper */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-white space-y-8 md:space-y-0 md:space-x-10">
+      <div className="relative z-10 max-w-container mx-auto mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-white space-y-8 md:space-y-0 md:space-x-10">
         
         {/* Left Section with Heading and Button */}
-        <div className="flex flex-col items-start max-w-lg space-y-6">
+        <div className="flex flex-col items-start space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold">
             Bringing higher voter turnout in elections
           </h2>
@@ -30,7 +30,7 @@ const HomePage = () => {
         </div>
         
         {/* Right Section with Subheading and Text */}
-        <div className="flex flex-col items-start max-w-lg space-y-4">
+        <div className="flex flex-col items-start space-y-4">
           <h4 className="text-2xl font-semibold">
             By empowering citizens to make informed voting decisions
           </h4>
@@ -40,17 +40,17 @@ const HomePage = () => {
         </div>
       </div>
     </section>
-    <section className='container mx-auto'>
-      <div className="flex justify-between items-center py-6">
-        <div>
-          <h3 className="text-5xl font-bold text-gray-900">
-            გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
-          </h3>
+    <section className='max-w-container mx-auto'>
+    <div className="flex flex-col lg:flex-row justify-between items-center py-6">
+        <h3 className="text-5xl font-bold text-gray-900">
+          გაიცანი პოლიტიკოსი და გააკეთე არჩევანი
+        </h3>
+        <div className='flex'>
           <p className="text-gray-500 text-xl mt-4">
-            აქ იქნება ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე.
+              აქ იქნება ტექსტი პოლიტიკოსების, პოლიტიკური პარტიების და მათი შედარების ხერხებზე.
           </p>
+          <span className="text-brandColorPrimary text-6xl font-bold">*</span>
         </div>
-        <span className="text-brandColorPrimary text-6xl font-bold">*</span> {/* Add your custom color */}
       </div>
       <ChoosePoliticians />
     </section>

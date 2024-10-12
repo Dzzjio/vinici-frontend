@@ -1,6 +1,7 @@
 import React from 'react';
 import aboutBg from '../img/about-bg.jpeg';
 import { methodologies, analysisItemsDesc } from './methodologies.jsx'
+import Team from './home/team.jsx';
 
 const About = () => {
   // Array of objects for grid content
@@ -96,6 +97,7 @@ const About = () => {
           </div>
           </div>
 
+            <Team />
     </div>
   );
 };

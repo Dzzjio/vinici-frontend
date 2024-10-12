@@ -2,8 +2,8 @@ import React from 'react';
 
 const MethodologiesFullView = () => {
   return (
-    <section className="py-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+    <section className="py-16 ">
+      <div className="max-w-container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left Side */}
         <div className="md:w-1/2">
           <div className="flex items-center mb-6">

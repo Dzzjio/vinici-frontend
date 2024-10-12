@@ -10,6 +10,9 @@ module.exports = {
         brandColorLight: '#F1EFF8',
         grayBackground: '#F9FAFB'
       },
+      maxWidth: {
+        'container': '80vw',
+      },
     },
   },
   plugins: [],

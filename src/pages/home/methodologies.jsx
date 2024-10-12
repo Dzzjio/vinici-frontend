@@ -26,7 +26,7 @@ const methodologies = [
 const Methodologies = () => {
   return (
     <section className="py-16 bg-[#F9FAFB]">
-      <div className="container mx-auto">
+      <div className="max-w-container mx-auto">
         <div className="flex flex-col md:flex-row items-start justify-between">
           {/* Left Section: Heading and Description */}
           <div className="md:w-1/2">

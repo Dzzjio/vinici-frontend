@@ -31,34 +31,36 @@ const teamMembers = [
 const Team = () => {
   return (
     <section className="py-16 bg-[#F9FAFB]">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900">გუნდი და პარტნიორები</h2>
-        <p className="text-gray-500 mt-4">
-          აქ იქნება ტექსტი გუნდის და პარტნიორების შესახებ
-        </p>
-      </div>
+      <div className='max-w-container mx-auto'>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900">გუნდი და პარტნიორები</h2>
+          <p className="text-gray-500 mt-4">
+            აქ იქნება ტექსტი გუნდის და პარტნიორების შესახებ
+          </p>
+        </div>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg text-center">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
-            <p className="text-brandColorPrimary font-semibold">{member.role}</p>
-            <p className="text-gray-500 mt-2">{member.description}</p>
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-4 text-gray-500 hover:text-brandColorPrimary"
-            >
-              <FaLinkedin size={24} /> {/* React Icons LinkedIn */}
-            </a>
-          </div>
-        ))}
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg text-center">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
+              />
+              <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>
+              <p className="text-brandColorPrimary font-semibold">{member.role}</p>
+              <p className="text-gray-500 mt-2">{member.description}</p>
+              <a
+                href={member.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-gray-500 hover:text-brandColorPrimary"
+              >
+                <FaLinkedin size={24} /> {/* React Icons LinkedIn */}
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

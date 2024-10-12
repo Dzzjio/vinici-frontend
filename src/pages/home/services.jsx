@@ -18,7 +18,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white max-w-container mx-auto">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900">თქვენზე მორგებული სერვისები</h2>
         <p className="text-gray-500 mt-4">Here goes text about services</p>
