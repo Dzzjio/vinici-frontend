@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4 flex justify-center">
+    <header className="bg-gray-800 text-white p-4 flex justify-between">
+      <p className='text-red-500'>!!! header is only for development, remove on production(src/router/root.js)</p>
         <nav>
           <ul className="flex space-x-4">
             <li>

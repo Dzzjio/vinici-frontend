@@ -2,6 +2,7 @@ import heroBg from '../../img/vinvar.jpeg';
 import ChoosePoliticians from './choosePoliticians';
 import Methodologies from './methodologies';
 import MethodologiesFullView from './methodologiesFullView';
+import Partners from './partners';
 import Services from './services';
 import Team from './team';
 import WhoAreWe from './whoAreWe';
@@ -68,6 +69,9 @@ const HomePage = () => {
     </section>
     <section>
       <MethodologiesFullView />
+    </section>
+    <section>
+      <Partners />
     </section>
     </>
   );

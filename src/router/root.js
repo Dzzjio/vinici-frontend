@@ -6,6 +6,7 @@ import Header from '../layout/header'
 const Root = () => {
   return (
     <div>
+        {/* REMOVE HEADER ON PRODUCTION */}
         <Header />
         <Outlet />
         {/* <Footer /> */}

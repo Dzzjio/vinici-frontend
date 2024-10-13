@@ -138,19 +138,32 @@ const About = () => {
           </div>
 
           <button className="mt-8 bg-brandColorPrimary text-white text-lg lg:text-xl font-semibold py-3 px-8 rounded-full">
-            დაგვიკავშირდით
+            {/* put correct link in href */}
+            <a href="softr contact page link">დაგვიკავშირდით</a>
           </button>
         </div>
       </div>
 
       <div className="py-12 mt-12 lg:mt-16">
         <div className="max-w-[95vw] lg:max-w-[80vw] mx-auto bg-grayBackground rounded-lg p-6 lg:p-8 flex flex-col items-center text-center shadow-md">
-          {/* Image container with three images */}
-          <div className="flex space-x-4 mb-4">
-            <img src={kobaxidze} alt="Kobaxidze" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white" />
-            <img src={ocneba} alt="Ocneba" className="w-20 h-20 lg:w-24 lg:h-24 rounded-full border-2 border-white" />
-            <img src={avatar} alt="Avatar" className="w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white" />
-          </div>
+        <div className="relative mb-4 h-20 lg:h-24 flex justify-center items-center">
+          <img
+            src={kobaxidze}
+            alt="Kobaxidze"
+            className="absolute w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-white left-[-40px]"
+          />
+          <img
+            src={ocneba}
+            alt="Ocneba"
+            className="relative z-10 w-16 h-16 lg:w-20 lg:h-20 rounded-full border-2 border-white"
+          />
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="absolute w-12 h-12 lg:w-16 lg:h-16 rounded-full border-2 border-white right-[-40px]"
+          />
+        </div>
+
           <h2 className="text-lg lg:text-xl font-semibold mb-2">გაქვთ დამატებითი კითხვები?</h2>
           <p className="text-sm lg:text-base text-gray-600 mb-4">Can't find the answer you're looking for? Please contact us.</p>
           <button className="bg-brandColorPrimary text-white px-6 lg:px-8 py-2 lg:py-3 rounded-full text-sm lg:text-base font-semibold hover:bg-brandColorPrimary-dark">
